@@ -1,3 +1,5 @@
+//Ejercicio02
+
 #define PIN_LDR A1
 
 int maximo = 0;
