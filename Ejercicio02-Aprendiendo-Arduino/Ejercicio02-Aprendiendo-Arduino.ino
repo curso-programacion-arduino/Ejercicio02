@@ -18,5 +18,5 @@ void loop() {
   Serial.print(maximo);
   Serial.print(",");
   Serial.println(minimo);
-  delay(500);
+  delay(100);
 }
