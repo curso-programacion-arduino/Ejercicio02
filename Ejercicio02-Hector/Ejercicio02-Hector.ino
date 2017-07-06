@@ -1,3 +1,6 @@
+int maximo = 0;
+int minimo = 1023;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -5,10 +8,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  maximo = max(maximo,analogRead(A1));
+  minimo = max(minimo,analogRead(A1));
   Serial.print(analogRead(A1));
   Serial.print(",");
-  Serial.print(max(1023,analogRead(A1)));
+  Serial.print(maximo);
   Serial.print(",");
-  Serial.println(min(0,analogRead(A1)));
+  Serial.println(minimo);
   delay(500);
 }
