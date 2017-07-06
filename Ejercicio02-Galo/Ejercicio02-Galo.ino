@@ -18,6 +18,6 @@ void loop()
   Serial.print(maximo);
   Serial.print("/");
   Serial.println(minimo);
-  delay(100);
+  delay(50);
 }
 
