@@ -1,3 +1,5 @@
+//Comentario
+
 #define PIN_LDR A1
 int maximo = 0;
 int minimo = 1023;
